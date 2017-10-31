@@ -3,17 +3,20 @@ header.header.js-header
         a.header__link(href="/")
             h1.header__title Laurianne Terrier
     nav.header__item.header__left
-        div.header__left__menu.header__menu
+        div.header__left__container.header__menu.js-menu
             form.form(action="" method="get")
                 input.header__search(type="text" placeholder="Search")
             ul
                 li #[a(href="") Portfolio]
                 li #[a(href="") Blog]
+        div.header__left__container(data-href='http://localhost:3000/T01-homepage.html#about').js-page
+            div.page__content.rte
+                img(src="http://via.placeholder.com/350x150")
+                p Oh no way! Take a squiz, this beached as holden is as epic as a stuffed hongi. #[strong Mean while, in Hamilton, Fred Dagg and Rhys Darby were up to no good with a bunch of paru quater-acre patchs]. The crook force of his #[i frying up was on par with Manus Morissette]'s beaut kiwiburger. Put the jug on will you bro, all these sweet old man's beards can wait till later. The first prize for pashing goes to... Hairy Maclary from Donaldson's Dairy and his mean as marmite shortage, what a sad guy. How's ya father. #[a(href='#') Bro, mince pies are really bloody good] with fully sick rugby balls, aye. Fair suck of the sav. You have no idea how rough as guts our stoked Silver Ferns were aye.
         div.header__left__handler
             button.header__btn.btn.link.js-menu-btn Menu
-            ul.header__pages
-                li #[a(href="#") About]
-
+            ul.header__pages.js-links
+                li.menu-item-object-page #[a(href="#about") About]
     div.header__item.header__bottom
         ul.header__cat
             li #[a(href="") Websites]
