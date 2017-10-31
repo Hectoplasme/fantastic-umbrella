@@ -81,14 +81,20 @@
         overflow-x hidden
         background-color $c-primary
         text-align center
-        transition right 1s cubic-bezier(0.645, 0.045, 0.355, 1)
+        transition right 500ms cubic-bezier(0.645, 0.045, 0.355, 1)
+
+        +desktop()
+            transition right 1s cubic-bezier(0.645, 0.045, 0.355, 1)
 
         .form, li
             margin-bottom 2rem
 
     .is-open
         right 0
-        transition right 1s cubic-bezier(0.645, 0.045, 0.355, 1)
+        transition right 500ms cubic-bezier(0.645, 0.045, 0.355, 1)
+
+        +desktop()
+            transition right 1s cubic-bezier(0.645, 0.045, 0.355, 1)
 
     .is-hidden
         opacity 0.1
