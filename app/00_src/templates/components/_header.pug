@@ -1,20 +1,20 @@
-header.header
-    nav.nav
-    div.nav__item.nav__top
-        a.nav__link(href="/")
-            h1.nav__title Laurianne Terrier
-    div.nav__item.nav__left
-        ul.nav__pages
-            li #[a(href="") About]
-            li #[a(href="") Other page]
-        button.btn.btn--nav Menu
-        div.nav__menu
+header.header.js-header
+    div.header__item.header__top
+        a.header__link(href="/")
+            h1.header__title Laurianne Terrier
+    nav.header__item.header__left
+        div.header__left__menu.header__menu
             form.form(action="" method="get")
-                input.nav__search(type="text" placeholder="Search")
+                input.header__search(type="text" placeholder="Search")
             ul
                 li #[a(href="") Portfolio]
                 li #[a(href="") Blog]
-    div.nav__item.nav__left
-        ul.nav__cat
+        div.header__left__handler
+            button.header__btn.btn.link.js-menu-btn Menu
+            ul.header__pages
+                li #[a(href="#") About]
+
+    div.header__item.header__bottom
+        ul.header__cat
             li #[a(href="") Websites]
             li #[a(href="") Illustrations]

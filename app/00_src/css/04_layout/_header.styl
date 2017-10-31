@@ -1,0 +1,93 @@
+.header
+    &__item
+        position fixed
+        letter-spacing 0px
+
+    &__top
+        z-index 50
+        top 0
+        width 100vw
+        height 3rem
+        padding-top 2rem
+        text-align center
+
+        +tablet()
+            padding-top 3rem
+
+    &__left
+        z-index 9
+        top 0
+        width 100vw
+        height 0
+
+        &__handler
+            width calc(100vh - 12rem)
+            height 2vh
+            display flex
+            flex-direction row
+            justify-content center
+            align-items center
+            transform-origin left center
+            transform rotate(270deg) translate(-107%, 3rem)
+
+            +tablet()
+                transform rotate(270deg) translate(-107%, 3rem)
+
+            li, button
+                display inline-block
+                letter-spacing 1px
+                margin-right 1rem
+
+                +tablet()
+                    margin-right 2rem
+
+            .header__btn
+                position relative
+                z-index 100
+
+    &__bottom
+        bottom 1rem
+        width 100vw
+        height 3rem
+        display flex
+        flex-direction row
+        justify-content center
+        align-items center
+
+        +tablet()
+            bottom 3rem
+
+        li, button
+            display inline-block
+            margin-right 1rem
+            transition opacity 1s linear
+
+            +tablet()
+                margin-right 2rem
+
+    &__menu
+        position absolute
+        top 0
+        right 100%
+        display flex
+        flex-direction column
+        justify-content center
+        align-items center
+        width 100vw
+        height 100vh
+        background-color $c-primary
+        text-align center
+        transition right 1s ease-in-out
+
+        .form, li
+            margin-bottom 2rem
+
+    &-menu-open
+        .header__menu
+            right 0
+            transition right 1s ease-in-out
+
+        .header__left__handler li
+            opacity 0.1
+            pointer-events none
+            transition opacity 1s linear

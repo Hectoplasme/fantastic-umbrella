@@ -34,12 +34,20 @@
 .bold
     bold()
 
-.btn
-    font-secondary()
-    black()
-    italic()
-    font-size $size-medium
-    letter-spacing 5px
+.header
+    &, &__btn, &__title
+        font-secondary()
+        font-size $size-medium - 0.2rem
+
+        +tablet()
+            font-size $size-medium
+
+    &__menu
+        font-size $size-large - 0.2rem
+
+        +tablet()
+            font-size $size-large
+
 
 .logo
     font-secondary()
