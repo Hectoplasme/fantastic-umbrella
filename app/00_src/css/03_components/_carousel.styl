@@ -1,0 +1,46 @@
+.slick
+    &-arrow
+        position absolute
+        z-index 100
+        top 0
+        height 100%
+        width 30%
+        border 0
+        outline none
+        background transparent
+        text-indent 9999px
+
+        &:hover:not([aria-disabled="true"])
+            cursor pointer
+
+    &-disabled
+        pointer-events none
+        
+    &-next
+        right 0
+
+    &-prev
+        left 0
+
+    &-slider
+        height 100%
+
+    &-list
+        // display flex
+        // align-items center
+        height 100%
+    //
+    &-track
+        height 100%
+
+    &-slide
+        height 100%
+        outline none
+
+        img
+            display block
+            max-width 100%
+            height auto
+            width auto
+            max-width 100%
+            margin auto

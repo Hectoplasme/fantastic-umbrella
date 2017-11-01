@@ -36,27 +36,30 @@ block content
                 div.post__header.js-post-thumbnail
                     img.post__thumbnail(src="http://via.placeholder.com/1600x800")
                 div.post__footer.rte.rte--no-img
-                    p Oh no way! Take a squiz! #[a(href="#") as epic].
+                    p
 
         article.posts__item.post.post--photo.js-post-photo
             div.post__inner
                 div.post__header.js-post-thumbnail
                     img.post__thumbnail(src="http://via.placeholder.com/800x800")
                 div.post__footer.rte.rte--no-img
-                    p Oh no way! Take a squiz! #[a(href="#") as epic].
+                    p Take a squiz! #[a(href="#") as epic].
 
-        article.posts__item.post.post--gallery.js-post-carousel
+        article.posts__item.post.post--gallery.js-post-gallery
             div.post__inner
-                div.post__header
-                    div.post__carousel
-                        img.post__thumbnail.js-post-thumbnail(src="http://via.placeholder.com/600x800")
-                        img.post__thumbnail.js-post-thumbnail(src="http://via.placeholder.com/800x600" alt="Owl Image")
-                        img.post__thumbnail.js-post-thumbnail(src="http://via.placeholder.com/600X800" alt="Owl Image")
-                        button.btn.post__link.post__carousel__btn Voir plus
+                div.post__header.js-post-carousel-btn
+                    div.post__carousel__display
+                        img.post__thumbnail(src="http://via.placeholder.com/600x800")
+                        img.post__thumbnail(src="http://via.placeholder.com/800x600" alt="Owl Image")
+                        button.btn.post__link.post__carousel__display__btn Voir plus
+                    div.post__carousel.js-post-carousel
+                        div.post__thumbnail
+                            img(src="http://via.placeholder.com/600x800")
+                        div.post__thumbnail
+                            img(src="http://via.placeholder.com/600x800")
+                        div.post__thumbnail
+                            img(src="http://via.placeholder.com/1600x800")
+                        div.post__thumbnail
+                            img(src="http://via.placeholder.com/800x800")
                 div.post__footer.rte.rte--no-img
                     p Oh no way! Take a squiz! #[a(href="#") as epic].
-            //- div.post__carousel
-            //-     div.item
-            //-         img(src="http://via.placeholder.com/350x750" alt="Owl Image")
-            //-         img(src="http://via.placeholder.com/350x150" alt="Owl Image")
-            //-         //img(src="http://via.placeholder.com/350x150" alt="Owl Image")

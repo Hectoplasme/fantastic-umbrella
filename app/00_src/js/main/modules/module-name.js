@@ -1,4 +1,4 @@
-const imgZoom = {
+const moduleName = {
         initialize() {
             console.log('pouet','it works !');
             this.bindUI();
@@ -22,4 +22,4 @@ const imgZoom = {
         }
 }
 
-module.exports = imgZoom;
+module.exports = moduleName;

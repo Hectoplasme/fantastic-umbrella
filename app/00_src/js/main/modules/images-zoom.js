@@ -1,6 +1,5 @@
-const moduleName = {
+const imgZoom = {
         initialize() {
-            console.log('pouet','it works !');
             this.bindUI();
             this.setProperties();
             this.bindEvents();
@@ -33,14 +32,16 @@ const moduleName = {
 
         close() {
             document.querySelector('.post--zoomed').classList.remove('post--zoomed');
+            document.body.classList.remove('overflow');
             this.isOpen = false;
         },
 
         open(e) {
             e.target.classList.add('post--zoomed');
+            document.body.classList.add('overflow');
             this.isOpen = true;
 
         }
 }
 
-module.exports = moduleName;
+module.exports = imgZoom;
