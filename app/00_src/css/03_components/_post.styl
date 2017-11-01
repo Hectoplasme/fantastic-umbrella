@@ -13,23 +13,25 @@
         &__header
             margin-bottom 1rem
 
-        &__thumbnail
-            margin 0
-
             &:hover
                 cursor pointer
 
+        &__thumbnail
+            margin 0
+
+            pointer-events none
+
+
         &--zoomed
-            .post__header
-                position fixed
-                z-index 200
-                top 0
-                left 0
-                width 100vw
-                height 100vh
-                padding 3rem
-                margin-bottom 0rem
-                background-color rgba($c-white, 0.9)
+            position fixed
+            z-index 200
+            top 0
+            left 0
+            width 100vw
+            height 100vh
+            padding 3rem
+            margin-bottom 0rem
+            background-color rgba($c-white, 0.9)
 
             .post__thumbnail
                 position absolute

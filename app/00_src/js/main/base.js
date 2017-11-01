@@ -6,6 +6,7 @@ require('es6-shim');
 const pouet = require('../libs/pouet.js');
 const utils = require('../libs/utils.js');
 const menuToggler = require('./modules/menu-toggler.js');
+const imgZoom = require('./modules/images-zoom.js');
 //const moduleName = require('./modules/module-name.js');
 
 (function ($, pouet, win) {
@@ -51,6 +52,7 @@ const menuToggler = require('./modules/menu-toggler.js');
                 // Example
                 //this.pouet.conditionalLoad('.js-module-class', moduleName.initialize.bind(moduleName));
                 this.pouet.conditionalLoad('.js-header', menuToggler.initialize.bind(menuToggler));
+                this.pouet.conditionalLoad('.js-post-photo', imgZoom.initialize.bind(imgZoom));
             },
 
             pouet: {

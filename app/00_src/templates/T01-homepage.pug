@@ -24,14 +24,28 @@ block content
                 div.post__footer
                     a(href="#" target="_blank").post__link Découvrir le projet
 
-        article.posts__item.post.post--photo
+        article.posts__item.post.post--photo.js-post-photo
             div.post__inner
-                div.post__header
-                    img.post__thumbnail.js-post-thumbnail(src="http://via.placeholder.com/600x800")
+                div.post__header.js-post-thumbnail
+                    img.post__thumbnail(src="http://via.placeholder.com/600x800")
                 div.post__footer.rte.rte--no-img
                     p Oh no way! Take a squiz! #[a(href="#") as epic].
 
-        article.posts__item.post.post--gallery
+        article.posts__item.post.post--photo.js-post-photo
+            div.post__inner
+                div.post__header.js-post-thumbnail
+                    img.post__thumbnail(src="http://via.placeholder.com/1600x800")
+                div.post__footer.rte.rte--no-img
+                    p Oh no way! Take a squiz! #[a(href="#") as epic].
+
+        article.posts__item.post.post--photo.js-post-photo
+            div.post__inner
+                div.post__header.js-post-thumbnail
+                    img.post__thumbnail(src="http://via.placeholder.com/800x800")
+                div.post__footer.rte.rte--no-img
+                    p Oh no way! Take a squiz! #[a(href="#") as epic].
+
+        article.posts__item.post.post--gallery.js-post-carousel
             div.post__inner
                 div.post__header
                     div.post__carousel
