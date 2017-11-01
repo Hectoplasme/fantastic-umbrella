@@ -4,18 +4,22 @@
         z-index 100
         top 0
         height 100%
-        width 30%
+        width 25%
         border 0
         outline none
         background transparent
         text-indent 9999px
+
+        +desktop()
+            width 30%
+
 
         &:hover:not([aria-disabled="true"])
             cursor pointer
 
     &-disabled
         pointer-events none
-        
+
     &-next
         right 0
 
