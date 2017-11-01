@@ -1,0 +1,23 @@
+.rte
+    img
+        margin-bottom 2rem
+
+    p
+        @extends .text
+
+    p + p
+        margin-top 1rem
+
+    a
+        bold()
+        display inline
+        padding-bottom 0px
+        border-bottom 4px solid $c-primary
+
+        &:before
+            content none
+
+        &:hover
+            padding-bottom 3px
+            border-bottom 4px solid $c-primary
+            transition all 200ms ease
