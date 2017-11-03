@@ -12,10 +12,16 @@
 
         +desktop()
             width 30%
+            left 50%
 
 
-        &:hover:not([aria-disabled="true"])
+        &:hover:not(.slick-disabled)
             cursor pointer
+
+            +desktop()
+                background url(../images/arrow.png) no-repeat right center
+                background-size 9rem
+
 
     &-disabled
         pointer-events none
@@ -23,8 +29,15 @@
     &-next
         right 0
 
+        +desktop()
+            right 50%
+
     &-prev
         left 0
+
+        +desktop()
+            left 50%
+            transform scaleX(-1) translateX(100%)
 
     &-slider
         height 100%
@@ -48,3 +61,6 @@
             width auto
             max-width 100%
             margin auto
+
+            &:hover
+                cursor auto

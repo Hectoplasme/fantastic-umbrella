@@ -8,6 +8,9 @@
     &__body
         display none
 
+        +desktop()
+            display block
+
 .post--photo
     .post
         &__header
@@ -70,6 +73,9 @@
                     width calc(50% - 0.5rem)
                     padding 0 1rem
 
+                    +desktop()
+                        width calc(30% - 1rem)
+
         &__thumbnail
             margin 0
             display none
@@ -81,10 +87,17 @@
                 display block
                 margin-bottom 1rem
 
+                +desktop()
+                    margin-bottom 2rem
+
             &:nth-of-type(2)
                 float left
                 display block
                 width calc(50% - 0.5rem)
+
+                +desktop()
+                    width calc(70% - 1rem)
+
 
         &--zoomed
             display block
@@ -114,3 +127,6 @@
 
                     +tablet()
                         padding 2rem
+
+                    +desktop()
+                        padding 0

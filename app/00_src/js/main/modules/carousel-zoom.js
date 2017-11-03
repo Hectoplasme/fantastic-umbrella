@@ -47,6 +47,7 @@ const carouselZoom = {
         $('.post--zoomed .js-post-carousel').slick({
             infinite: false,
             centerMode: true
+
         });
 
     }
