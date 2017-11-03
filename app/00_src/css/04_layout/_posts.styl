@@ -3,32 +3,45 @@
     padding-right 5rem
 
     +tablet()
+        column-count 2
+        column-gap 0
         padding 9rem
         padding-right 8rem
 
     +desktop()
-        padding 15rem
-        padding-right 14rem
+        max-width 180rem
+        margin auto
+        padding 11rem
+        padding-right 10rem
+
+    +wide()
+        padding-top 15rem
 
     &__item
         width 100%
         margin-bottom 6rem
 
         +tablet()
-            width 46%
-            float left
-            margin-right 2%
+            break-inside avoid
+            padding 0 4%
 
-        +desktop()
-            width 47%
+            .post__inner
+                max-width 80rem
+                margin auto
+                padding 0 4%
+        //     width 42%
+        //     float left
+        //     margin 4%
+        //
+        // +desktop()
+            //width 42%
 
         &:nth-of-type(2n)
-            +tablet()
-                float right
-                margin 0
+            // +tablet()
+            //     float right
 
         &:last-of-type
             margin-bottom 0
 
-            +tablet()
-                padding-bottom 8rem
+            // +tablet()
+            //     padding-bottom 8rem
